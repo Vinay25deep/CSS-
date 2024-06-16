@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+</head>
+<style>
+    .navbar{
+        background-color: rgb(49, 38, 170);
+        border-radius: 30px;
+    }
+    /* to show background color as we use float parent properties will overflow  */
+    .navbar ul{
+        overflow: auto;
+    }
+    .navbar li{
+        float: left;
+        list-style:none;
+        margin: 10px 5px;
+    }
+    .navbar li a{ 
+        padding:3px 3px;
+        text-decoration: none; /*for removing underline from a tag */
+        color: rgb(255, 255, 255);
+    }
+    .navbar li a:hover{ 
+        background-color: black;
+        color: rgb(225, 250, 3);
+    }
+    /* #search{
+        float:right;
+        color: rgb(0, 0, 0);
+        padding:3px 3px;
+        margin:10px 5px;
+    } */
+    /* OR WE CAN ALSO EDIT INPUT TAG IN NAV BAR LIKE THIS */
+    .navbar input{
+        float: right;
+        border: 2px solid black ;
+        border-radius: 20px;
+        padding:3px 3px;
+        margin:9px 20px;
+        width: 130px;
+
+    }
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+                <!-- <div class="search">
+                    This is search box
+                </div> -->
+                <input type="text" name="search" id="search" placeholder="Search this website">
+            </ul>
+            
+        </nav>
+    </header>
+    
+</body>
+</html>

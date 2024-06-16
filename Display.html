@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    header{
+        width: 1200px;
+        margin:auto;
+        border: 2px solid red;
+    }
+    img{
+        width:50px ;
+        display: block;  /* it will take the whole space of border(box) so that we can centre the img also.  */
+        margin: auto;
+
+    }
+    h3{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+
+    }
+    
+
+    .box{
+        border: 4px solid black;
+        background-color: grey; 
+        margin: 4px 0px;
+        padding:6px;
+        display:inline-block;
+        width:33%;
+        box-sizing: border-box;
+
+    }
+    .container{
+        margin: auto;
+        width: 1200px;
+
+    }
+
+</style>
+<body>
+      <header class="top">
+        <h3>I WELCOME YOU</h3>
+        <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg" alt="">
+
+      </header>
+      <div class="container">
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam distinctio itaque quas officia accusantium neque recusandae voluptas rerum sit quo iusto eligendi adipisci consequatur temporibus, quos, nesciunt modi hic excepturi? Dignissimos totam et dolores.
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam distinctio itaque quas officia accusantium neque recusandae voluptas rerum sit quo iusto eligendi adipisci consequatur temporibus, quos, nesciunt modi hic excepturi? Dignissimos totam et dolores.
+            </p>
+        </div>
+        <div class="box">
+            <h4>Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam distinctio itaque quas officia accusantium neque recusandae voluptas rerum sit quo iusto eligendi adipisci consequatur temporibus, quos, nesciunt modi hic excepturi? Dignissimos totam et dolores.
+            </p>
+        </div>
+      </div>
+    
+</body>
+</html>

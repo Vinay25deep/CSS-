@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units(Responsiveness)</title>
+</head>
+<style>
+    html{
+        font-size: 25px;
+    }
+    .container {
+        font-size: 10px;
+        /* vh,vw is same as like %  */
+        height: 100vh; /*vh(view height) means it will take full view height  */
+        width: 100vw; /*vw (view width ) means it will take full view width */
+        border: 2px solid black;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    /* #first {
+        /* 10em means the size of first element text will be 10 times the parent
+         item i.e container so 3*10=30px is the size of first heading.  
+         check in computed in inspect.*/
+        /* font-size: 3em; */
+
+        /* if padding is 3em then it 3*font-size i.e 3*30=90px  */
+        /* padding: 3em; 
+    }
+    #second{
+        /* rem is same as em but it is relative to html instead of parent item like in em  */
+        /* font-size: 3rem; */
+        /* padding: 3rem; 
+    } */
+</style>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+
+</html>

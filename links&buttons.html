@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and Designing</title>
+</head>
+<style>
+    .container{
+        border: 2px solid red;
+        background-color: #7ab522;
+        padding: 34px;
+        margin: 34px auto;
+        width: 600px;
+    }
+    a{
+        /* for removing underline frim Read More and evry text in a  */
+        text-decoration: none;
+        color:rgb(0, 0, 0)
+    }
+    a:hover{
+        color:#b71818;
+        background-color: antiquewhite;
+    }
+    .btn{
+        background-color: #10a1c5;
+        padding: 6px;
+        border: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer; /* since for showing pointer on caontact us block */
+        font-size: 13px;
+        border-radius: 13px;
+
+
+
+    }
+
+    a:visited{
+        background-color:rgb(210, 205, 55) ; /*color changes from blue to yellow because it becomes visited link now*/
+    
+    }
+    a:active{
+        /* after clicking that button  */
+        background-color: rgb(155, 38, 159);
+    }
+    .btn:hover{
+        background-color: #d33f64;
+        color: rgb(33, 188, 90);
+        border: 2px solid black;
+    }
+
+</style>
+<body>
+
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vero nesciunt harum vel alias tenetur expedita, sapiente nisi perferendis maxime fugit vitae, labore, mollitia voluptates. Vitae reiciendis exercitationem soluta voluptates excepturi, sint nemo ipsam.
+        </p>
+        <a href="https://www.youtube.com/" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+
+    </div>
+    
+</body>
+</html>

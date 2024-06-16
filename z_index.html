@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+
+</head>
+<style>
+     /* z-index  will work only for position: relative, absolute, fixed or sticky; */
+    /* jiska z-index jyada hoga uski visibility mani jaegi, vo uper a jaega  */
+     .box{
+        width: 170px;
+        height: 170px;
+        border: 2px solid black;
+        
+    }
+    #box1{
+        position: relative;
+        top:  66px;
+        background-color: blue;
+        z-index: 30;
+        
+
+    }
+    #box2{
+        /* visibility: hidden; ellement will hide space will be there  */
+        /* display: none; element will hide and its space will also gone */
+        position: relative;
+        top: 14px;
+        background-color: rgb(58, 226, 43);
+        z-index: 34;
+    }
+    #box3{
+        background-color: brown;
+        
+        
+    }
+    #box4{
+        background-color: rgb(255, 255, 0);
+    }
+</style>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    
+</body>
+</html>

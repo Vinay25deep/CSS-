@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+        /* default property applied to every element we use  *{  } tag*/
+        *{
+            /* box-sizing: border-box; applying box-sizing property to every block elelment */
+            
+            margin: 0px; /* default margin for all  */
+        }
+        .container{
+            background-color: rgb(10, 154, 211);
+            border: 3px solid rgb(101, 0, 168);
+            /* padding: 19px;
+            margin: 20px; */
+            /* we can get same padding for specific top bottom right and left  */
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+
+            /* or we can also give padding/margin like tope right bottom left  */
+          /* padding: 20px 20px 20px 20px; */
+        }
+
+        .box{
+                background-color: rgb(237, 141, 62);
+                border: 3px solid rgb(41, 114, 129);
+
+                /* we can also give padding and margin in form of x(top/bottom) and y(left/right) */
+                padding:20px 18px;
+                margin: 15px 20px;
+                border-radius: 20px;
+                width: 400px;
+                box-sizing: border-box;
+
+
+            }
+            
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias porro ipsa rerum mollitia accusantium, sapiente eligendi blanditiis eius corporis sint, inventore quod facere vero quia cum praesentium nesciunt in pariatur vitae, ipsum quos veritatis.
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias porro ipsa rerum mollitia accusantium, sapiente eligendi blanditiis eius corporis sint, inventore quod facere vero quia cum praesentium nesciunt in pariatur vitae, ipsum quos veritatis.
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias porro ipsa rerum mollitia accusantium, sapiente eligendi blanditiis eius corporis sint, inventore quod facere vero quia cum praesentium nesciunt in pariatur vitae, ipsum quos veritatis.
+        </p>
+    </div>
+    <div class="box">
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias esse, fugiat eum optio ratione illo ducimus a commodi, cumque, hic perferendis culpa sint consectetur quod ex. Ipsam, libero voluptate cupiditate assumenda eum illo.</p>
+
+    </div>
+    <div class="box">
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias esse, fugiat eum optio ratione illo ducimus a commodi, cumque, hic perferendis culpa sint consectetur quod ex. Ipsam, libero voluptate cupiditate assumenda eum illo.</p>
+
+    </div>
+    <div class="box">
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias esse, fugiat eum optio ratione illo ducimus a commodi, cumque, hic perferendis culpa sint consectetur quod ex. Ipsam, libero voluptate cupiditate assumenda eum illo.</p>
+
+    </div>
+</body>
+</html>
